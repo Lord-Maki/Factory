@@ -23,7 +23,7 @@ namespace System.Trucks
         {
             if (TrucksRelouded == true)
             {
-                Console.WriteLine("The truck relouded");
+                Console.WriteLine("The truck relouded...");
                 Information.GetInfo();
                 Console.WriteLine("Forwrd to the road-object");
                 TrucksRelouded = false;
@@ -39,7 +39,7 @@ namespace System.Trucks
             Console.WriteLine(max_weight);
            var rnd = new Random();
             Materials material = (Materials)rnd.Next(1,4);
-            Console.WriteLine($"The truck is loading {material}");
+            Console.WriteLine($"The truck is loading {material}...");
             TrucksRelouded=true;
             TruckCondition();
         }
